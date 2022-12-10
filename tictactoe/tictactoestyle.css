@@ -1,0 +1,60 @@
+
+table{
+  background-color: rgba(38, 167, 143, 0.434);
+  border-radius: 20px;
+  margin: auto;
+  border-style : hidden;
+  border-collapse: collapse;
+  overflow: hidden;
+  cursor: pointer; 
+}
+
+td {
+  color: white;
+  border: 2px solid white;
+  text-align: center;
+  font-size : 60px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-collapse: separate;
+}
+
+
+.title {
+  display: flex;
+  margin: auto;
+  width: 250px;
+  text-align: center;
+}
+.tic {
+  color: red;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.tac {
+  color: yellow;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.toe {
+  color: blue;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn {
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid rgb(41, 127, 130);
+  border-radius: 2em;
+  color :  rgb(41, 127, 130);
+  display: flex;
+  margin : auto;
+
+}
