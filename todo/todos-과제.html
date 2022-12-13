@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>todos</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="todos-body">
+    <div class="title"> todos </div>
+    <div class="search">
+      <div class="search-top">
+        <label class="allcheck-off" id="allclick">&#10003;</label>
+        <input id="inputbox" type="text" onkeypress="onkey(event)" class="intext">
+      </div>
+      <ul class="list-body">
+      </ul>
+    </div>
+  </div>
+  <div class="search">
+    <input id="btn1" type ="button"  value ="0 items left">
+    <input id="btn2" class="btn-on" type="button" value="All">
+    <input id="btn3" class="btn-off" type="button" value="Active">
+    <input id="btn4" class="btn-off" type="button" value="Completed">
+    <input id="btn5" class="btn-off" type="button" value="Clear completed">
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
