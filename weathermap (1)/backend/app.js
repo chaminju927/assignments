@@ -12,11 +12,11 @@ if (hour < 11) {
   var hours = `${hour-1}00`;
 };
 
-console.log(hours);
+console.log(hours);           //
 
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/proxy2', (req, res) => {
+app.get('/proxy2', (req, res) => {       // 요청 핸들러 : 요청이 들어왔을때 호출되는 메서드
 
   res.set('Access-Control-Allow-Origin', '*');
   res.set('Content-Type', 'application/json; charset=UTF-8');

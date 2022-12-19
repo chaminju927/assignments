@@ -51,14 +51,14 @@ var jejuwindicon = document.querySelector("#jejuwindicon");
 let today = new Date();
 var time = document.querySelector("#time");
 
-let year = today.getFullYear();
+let year = today.getFullYear();   
 let month = today.getMonth() + 1;
 let day = today.getDate();
 let hour = today.getHours();
 
 let hours = `${hour}00`;
 
-let date = `${year}${month}${day}`;
+let date = `${year}${month}${day}`;  //get요청으로 객체 저장시 필요.
 let date2 = `${year}-${month}-${day}`;
 
 let windicon = document.querySelector("#wind");
@@ -156,6 +156,7 @@ temp.onclick = function() {
 
     guii.innerHTML = guiitmp + "℃";
     guiiwind.innerHTML = guiiwindspeed + "㎳";
+    console.log(arr);
 
     if (guiirain == 0) {
         if (guiisky == 3) {
@@ -210,11 +211,11 @@ temp.onclick = function() {
 }());       
 
 (function daejeonn() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET",
+    var xhr = new XMLHttpRequest();          //ajax 객체 생성
+    xhr.open("GET",                              //서버와 연결/false는 동기방식
         "http://localhost:3000/proxy2?base_date=" + date +
         "&nx=" + daejeonx + "&ny=" + daejeony, false);
-    xhr.send();
+    xhr.send();                                //서버에 요청
     var arr = JSON.parse(xhr.responseText);
 
     let daejeonsky = arr.response.body.items.item[18].fcstValue;
