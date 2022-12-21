@@ -1,0 +1,13 @@
+#map {
+    border: 1px red solid;
+    width: 500px;
+    height: 500px;
+    float: left;
+    margin-left: 150px;
+  }
+  #accordion {
+    border: 1px red solid;
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+  }
