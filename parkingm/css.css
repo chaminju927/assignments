@@ -1,7 +1,9 @@
 #main{
+  box-sizing: content-box;
   text-align: center;
+  font-size: 50px;
   border: 1px solid black;
-  margin : 50px;
+  margin : 0px 20px 5px 5px;
 
 }
 
