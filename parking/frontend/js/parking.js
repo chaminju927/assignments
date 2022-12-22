@@ -1,7 +1,7 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-function seven(a, b, c, d, e, f, g) {
+function seven(a, b, c, d, e, f, g) {    
   var xhr = new XMLHttpRequest();
   xhr.open("GET",
     "http://localhost:3000/proxy2?=", false);
